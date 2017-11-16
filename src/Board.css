@@ -1,0 +1,22 @@
+.board-cont {
+    position: relative;
+    background-image: url('./img/board.jpg');
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+    width: 510px;
+    height: 510px;
+}
+
+.board {
+   border-collapse: collapse;
+    position: relative;
+   margin-top: 20px;
+   
+}
+.board, th, td {
+  /* border: 1px solid black; */
+}
+.board td {
+  padding: 25px;
+}

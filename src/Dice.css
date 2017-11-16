@@ -1,0 +1,44 @@
+
+.dice-ico {
+  width: 37px;
+  height: 37px;
+  position: relative;
+  background-image: url("./img/dice1.png");
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.dice-ico.-roll {
+  animation: play-dice .5s steps(16) infinite;
+} 
+
+.dice-ico.-d1 {
+  background-position:    0px;
+}
+
+.dice-ico.-d2 {
+  background-position:    450px;
+}
+
+.dice-ico.-d3 {
+  background-position:    0 37px;
+}
+
+.dice-ico.-d4 {
+  background-position:    0 0;
+}
+
+.dice-ico.-d5 {
+  background-position:    150px;
+}
+
+.dice-ico.-d6 {
+  background-position:   300px;
+}
+
+
+@keyframes play-dice {
+   from { background-position:    0px; }
+     to { background-position: -600px; }
+}

@@ -1,0 +1,56 @@
+.avatar {
+    width: 10px;
+    height: 10px;
+    /* background: grey; */
+    /* border-radius: 50%; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: linear .5s all;
+}
+
+.avatar.-chicken {
+    width: 49px;
+    height: 49px;
+    background-image: url("./img/chicken.png");
+}
+
+.avatar.-chicken.-play{
+    animation:   play .2s steps(3) 4 alternate;
+    
+}
+
+.avatar.-chicken.-play-right{
+    animation:   play-right .2s steps(3) infinite alternate;
+}
+.avatar.-chicken.-play-left{
+    animation:   play-left .2s steps(3) infinite alternate;
+}
+.avatar.-chicken.-play-back{
+    animation:   play-back .2s steps(3) infinite alternate;
+}
+
+
+@keyframes play {
+   from { background-position:   0px 0; }
+     to { background-position: -145px 0; }
+}
+
+
+@keyframes play-right {
+   from { background-position:   0px -95px; }
+     to { background-position: -140px -95px; }
+}
+
+@keyframes play-left {
+   from { background-position:   0px -49px; }
+     to { background-position: -140px -49px; }
+}
+
+@keyframes play-back {
+   from { background-position:   0px -145px; }
+     to { background-position: -140px -145px; }
+}
+
+
+
